@@ -1,14 +1,13 @@
 using StatePattern.Main;
 using StatePattern.Player;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using StatePattern.StateMachine;
 
 namespace StatePattern.Enemy
 {
     public class ShootingState : IState
     {
-        public OnePunchManController Owner { get; set; }
+        public EnemyController Owner { get; set; }
         private OnePunchManStateMachine stateMachine;
         private PlayerController target;
         private float shootTimer;
