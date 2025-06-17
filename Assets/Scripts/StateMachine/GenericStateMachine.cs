@@ -1,4 +1,5 @@
 using StatePattern.Enemy;
+using System.Collections.Generic;
 
 namespace StatePattern.StateMachine
 {
@@ -6,7 +7,7 @@ namespace StatePattern.StateMachine
     {
         protected T Owner;
         protected IState currentState;
-        protected Dictionary<States, IState> States = new Dictionary<States, IState>();
+        protected Dictionary <States, IState> States = new Dictionary<States, IState>();
 
         public GenericStateMachine(T Owner) => this.Owner = Owner;
 
