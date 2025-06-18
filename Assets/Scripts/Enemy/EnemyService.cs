@@ -71,6 +71,8 @@ namespace StatePattern.Enemy
             return enemy;
         }
 
+        public void AddEnemy(EnemyController enemy) => activeEnemies.Add(enemy);
+
         public void EnemyDied(EnemyController deadEnemy)
         {
             activeEnemies.Remove(deadEnemy);
